@@ -1,0 +1,164 @@
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid lightgray;
+}
+
+.container {
+    /* max-width: 800px; */
+    margin: 25px auto;
+    padding: 20px;
+}
+form {
+    margin-bottom: 30px;
+}
+/* Input and select styles */
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+.box {
+    flex: 1;
+    padding: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 92%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+p {
+    text-align: left;
+    color: red;
+    font-size: 14px;
+}
+input[type="search"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.btn-primary i {
+    padding: 8px 9px;
+}
+
+/* Radio and checkbox styles */
+.wrap-two {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.box-two {
+    flex: 1;
+    padding: 5px;
+}
+
+label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Button styles */
+.btn-two {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input[type="button"],
+input[type="reset"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-right: 25px;
+}
+
+input[type="button"]:hover,
+input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+
+/* container two */
+.container-two {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-two .box-two {
+    display: flex;
+}
+.btn-primary {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-primary a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.btn-primary a:hover {
+    background-color: #0056b3;
+}
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+
+    .wrap,
+    .wrap-two {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 552px) {
+    #navbar ul {
+        /* flex: none; */
+        display: inherit;
+    }
+}
+/* table css */
+.table_content {
+    display: grid;
+    background-color: rgb(214, 213, 213);
+}
+.table_content tbody tr td {
+    text-align: center;
+}

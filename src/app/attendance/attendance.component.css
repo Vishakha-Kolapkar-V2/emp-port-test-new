@@ -1,0 +1,29 @@
+.container h2 {
+    text-align: center;
+    text-decoration: underline;
+    color:rgb(15, 26, 49);
+}
+.chart {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .bar {
+    display: flex;
+    margin-bottom: 10px;
+    width: 50%;
+  }
+  
+  .label {
+    min-width: 100px;
+    FONT-SIZE: larger;
+  }
+  
+  .bar-inner {
+    background-color: #007bff; /* Change to your desired bar color */
+    color: white;
+    text-align: center;
+    padding: 5px;
+  }
+  

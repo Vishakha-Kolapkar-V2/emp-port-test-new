@@ -1,0 +1,82 @@
+
+<div class="container">
+    <div class="head">
+      <h1>PERSONAL</h1>
+    </div>
+    <form id="personal-info-form" action="submit.php" method="post">
+      <div class="row">
+        <div class="col">
+          <h3>Personal Info</h3>
+          <div class="rows">
+            <div class="row-1">
+              <div class="col-1">
+                <label for="first-name"><strong>First Name:</strong></label>
+                <input type="text" id="first-name" name="first_name" value="Vishakha" required>
+              </div>
+              <div class="col-1">
+                <label for="middle-name"><strong>Middle Name:</strong></label>
+                <input type="text" id="middle-name" name="middle_name" value="Chandrashekhar">
+              </div>
+            </div>
+            <div class="row-1">
+              <div class="col-1">
+                <label for="last-name"><strong>Last Name:</strong></label>
+                <input type="text" id="last-name" name="last_name" value="Kolapkar" required>
+              </div>
+              <div class="col-1">
+                <label for="mobile-no"><strong>Mobile No.:</strong></label>
+                <input type="text" id="mobile-no" name="mobile_no" value="9012902390" required>
+              </div>
+            </div>
+            <div class="row-1">
+              <div class="col-1">
+                <label for="gender"><strong>Gender:</strong></label>
+                <select id="gender" name="gender" required>
+                  <option value="Female" selected>Female</option>
+                  <option value="Male">Male</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="col-1">
+                <label for="marital-status"><strong>Marital Status:</strong></label>
+                <select id="marital-status" name="marital_status" required>
+                  <option value="Single" selected>Single</option>
+                  <option value="Married">Married</option>
+                  <option value="Divorced">Divorced</option>
+                </select>
+              </div>
+              <button type="button" (click)="savePersonalInfo()" [hidden]="!personalInfoEditMode">Save</button>
+              <button type="button" (click)="togglePersonalInfoEdit()" [hidden]="personalInfoEditMode">Edit</button>
+            </div>
+          </div>
+          <!-- <button type="submit">Submit</button> -->
+        </div>
+        <div class="col">
+          <h3>Educational Info</h3>
+          <div class="rows">
+            <div class="row-2">
+              <div class="col-2">
+                <label for="qualification"><strong>Qualification:</strong></label>
+                <input type="text" id="qualification" name="qualification" value="MCA" required>
+              </div>
+              <div class="col-2">
+                <label for="university"><strong>University:</strong></label>
+                <input type="text" id="university" name="university" value="North Maharashtra University" required>
+              </div>
+              <div class="col-2">
+                <label for="year"><strong>Year:</strong></label>
+                <input type="text" id="year" name="year" value="2023" required>
+              </div>
+              <div class="col-2">
+                <label for="specification"><strong>Specification:</strong></label>
+                <input type="text" id="specification" name="specification" value="Computer Application" required>
+              </div>
+            </div>
+          </div>
+          <button type="button" (click)="saveEducationalInfo()" [hidden]="!educationalInfoEditMode">Save</button>
+          <button type="button" (click)="toggleEducationalInfoEdit()" [hidden]="educationalInfoEditMode">Edit</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <app-footer></app-footer>

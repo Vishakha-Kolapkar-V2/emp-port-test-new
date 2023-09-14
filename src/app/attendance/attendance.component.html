@@ -1,0 +1,12 @@
+<div class="container">
+    <h2>ATTENDANCE</h2>
+    <div class="chart">
+        <div *ngFor="let data of attendanceData" class="bar">
+            <div class="label">{{ data.month }}</div>
+            <div class="bar-inner" [style.width.%]="(data.count / maxCount) * 100">
+                {{ data.count }}
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

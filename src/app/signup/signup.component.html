@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <h2>EMPLOYEE REGISTRATION FORM</h2>
+        <form #signUpForm="ngForm" (ngSubmit)="SignUp(signUpForm)">
+            <!-- First Name & Last Name -->
+            <div class="wrap">
+                <div class="box">
+                    <input type="text" id="firstname" name="firstname" [(ngModel)]="employee.firstname" minlength="5"
+                        placeholder="First Name" required #firstnameInput="ngModel">
+                    <p *ngIf="firstnameInput.invalid && (firstnameInput.dirty || firstnameInput.touched)" class="error">
+                        First Name is required and must be at least 5 characters long.</p>
+                </div>
+                <div class="box">
+                    <input type="text" id="lastname" name="lastname" [(ngModel)]="employee.lastname" minlength="5"
+                        placeholder="Last Name" required #lastnameInput="ngModel">
+                    <p *ngIf="lastnameInput.invalid && (lastnameInput.dirty || lastnameInput.touched)" class="error">
+                        Last Name is required and must be at least 5 characters long.</p>
+                </div>
+            </div>
+            <!-- Email & Mobile Number -->
+            <div class="wrap">
+                <div class="box">
+                    <input type="email" id="email" name="email" [(ngModel)]="employee.email"
+                        pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" placeholder="Email-ID" required #emailInput="ngModel">
+                    <p *ngIf="emailInput.invalid && (emailInput.dirty || emailInput.touched)" class="error">
+                        Please enter a valid Email address.</p>
+                </div>
+                <div class="box">
+                    <input type="tel" name="mobile" [(ngModel)]="employee.mobile" id="mobile" placeholder="Mobile Number"
+                        required #mobileInput="ngModel">
+                    <p *ngIf="mobileInput.invalid && (mobileInput.dirty || mobileInput.touched)" class="error">
+                        Mobile Number is required.</p>
+                </div>
+            </div>
+            <!-- Company Name & Designation -->
+            <div class="wrap">
+                <div class="box">
+                    <input type="text" id="cname" name="cname" [(ngModel)]="employee.cname" placeholder="Company Name"
+                        required #cnameInput="ngModel">
+                    <p *ngIf="cnameInput.invalid && (cnameInput.dirty || cnameInput.touched)" class="error">
+                        Company Name is required.</p>
+                </div>
+                <div class="box">
+                    <select name="designation" [(ngModel)]="employee.selectedDesignation" required #designationInput="ngModel">
+                        <option value="" disabled selected>Designation</option>
+                        <option value="Associate Software Engineer">Associate Software Engineer</option>
+                        <option value="Junior Software Engineer">Junior Software Engineer</option>
+                        <option value="Senior Software Engineer">Senior Software Engineer</option>
+                        <option value="Lead Software Engineer">Lead Software Engineer</option>
+                    </select>
+                    <p *ngIf="designationInput.invalid && (designationInput.dirty || designationInput.touched)" class="error">
+                        Designation is required.</p>
+                </div>
+            </div>
+            <!-- Department Name & Progress -->
+            <div class="wrap">
+                <div class="box">
+                    <input type="text" id="dname" name="dname" [(ngModel)]="employee.dname"
+                        placeholder="Search department name" required #dnameInput="ngModel">
+                    <button type="button" class="btn btn-primary">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <p *ngIf="dnameInput.invalid && (dnameInput.dirty || dnameInput.touched)" class="error">
+                        Department Name is required.</p>
+                </div>
+            </div>
+            <!-- Gender -->
+            <div class="container-two">
+                <div class="wrap-two">
+                    <div class="box-two">
+                        <label for="gender">Gender</label><br>
+                        <input type="radio" name="gender" id="gender" [(ngModel)]="employee.gender" value="Female">
+                        <label for="gender">Female</label>
+                        <input type="radio" name="gender" id="gender" [(ngModel)]="employee.gender" value="Male">
+                        <label for="gender">Male</label>
+                        <input type="radio" name="gender" id="gender" [(ngModel)]="employee.gender" value="Other">
+                        <label for="gender">Other</label>
+                        <!-- <p *ngIf="!employee.gender" class="error">Gender is required.</p> -->
+                    </div>
+                </div>
+            </div>
+            <!-- Description -->
+            <div class="wrap">
+                <div class="box">
+                    <textarea name="description" id="description" [(ngModel)]="employee.description" cols="100" rows="10"
+                        placeholder="Description" required #descriptionInput="ngModel"></textarea>
+                    <p *ngIf="descriptionInput.invalid && (descriptionInput.dirty || descriptionInput.touched)" class="error">
+                        Description is required.</p>
+                </div>
+            </div>
+            <!-- Submit & Reset -->
+            <div class="btn-primary">
+                <button type="submit" [disabled]="signUpForm.invalid">SUBMIT</button>
+                <a routerLink="/activeuser" routerLinkActive="active">ACTIVE USERS</a>
+            </div>
+        </form>
+    </div>
+    <app-footer></app-footer>
+</body>
+</html>

@@ -1,0 +1,176 @@
+@import "~@fortawesome/fontawesome-free/css/all.css";
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f2f2f2;
+}
+.main-section {
+    padding: 30px 0;
+    background-color: #f0f0f0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.card__header {
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__header h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.row-2 .card .card__body {
+    padding: 30px;
+    background: lightblue;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.card__body h5 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card__img img {
+    margin-left: 15%;
+    outline: 2px solid lightgrey;
+}
+
+.card__body-and-img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.col-md-6 {
+    flex: 0 0 calc(50% - 20px);
+   
+}
+.col-3 {
+    width: 100%;
+}
+.card-body {
+    padding: 10px 10px;
+    background-color: aliceblue;
+    border-bottom: 1px solid lightgrey;
+}
+.card-body .row {
+    display: flex;
+  
+    justify-content: space-between;
+    padding: 10px 10px;
+    gap: 30%;
+}
+.row .col-6 i {
+    font: xx-large;
+}
+.card__footer {
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+span {
+    color: lightgray;
+}
+.card__footer a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.card__footer a:hover {
+    color: #666;
+}
+.social {
+    margin-bottom: 10px;
+}
+.social i {
+    margin: 0 5px;
+    font-size: 18px;
+    color: black
+}
+
+#footer {
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+   
+}
+#footer ul {
+    list-style: none;
+    margin-top: 10px;
+}
+#footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+#footer ul li a {
+    text-decoration: underline;
+}
+#footer p {
+    color: black;
+}
+#footer ul li a:hover {
+    color: #ccc;
+}
+@media (max-width: 500px) {
+    .col-md-6 {
+        width: 100%;
+        flex: none;
+    }
+    #navbar ul {
+       display: inherit;
+    }    
+}

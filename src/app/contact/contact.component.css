@@ -1,0 +1,91 @@
+@import "~@fortawesome/fontawesome-free/css/all.css";
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 15px;
+  }
+  h1{
+    text-shadow: 2px 2px gray;
+    font-size: xxx-large;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    border-width: thin;
+  }
+  #contact-form {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  label {
+    font-weight: bold;
+  }
+  button[type="submit"] {
+    background-color: #35424a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  button[type="submit"]:hover {
+    background-color: #29363d;
+  }
+  /* social */
+.social {
+    margin-bottom: 10px;
+}
+
+.social i {
+    margin: 0 5px;
+    font-size: 18px;
+    color: black
+}
+
+/* Footer */
+
+#footer {
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    /* background-color: #333; */
+}
+
+#footer ul {
+    list-style: none;
+    margin-top: 10px;
+}
+
+#footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#footer ul li a {
+    text-decoration: underline;
+    /* color: #fff; */
+}
+#footer p {
+    color: black;
+}
+#footer ul li a:hover {
+    color: #ccc;
+}

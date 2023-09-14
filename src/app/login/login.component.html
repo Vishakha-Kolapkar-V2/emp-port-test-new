@@ -1,0 +1,47 @@
+
+<div class="content">
+    <div class="login-form-body">
+        <h1>Login Form</h1>
+        <!-- Login Form HTML -->
+        <form #loginForm="ngForm" (ngSubmit)="LoginUser()">
+            <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input type="text" name="username" [(ngModel)]="username" placeholder="Enter your name"
+                    required minlength="5" class="borderbottom">
+            </div>
+            <p class="validation-error" *ngIf="loginForm.controls['username'].invalid && loginForm.controls['username'].dirty">
+                Username is required and must be at least 5 characters long.
+            </p>
+
+            <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="email" [(ngModel)]="email"
+                    pattern="^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$" placeholder="Enter your Email-id"
+                    required>
+            </div>
+            <p class="validation-error" *ngIf="loginForm.controls['email'].invalid && loginForm.controls['email'].dirty">
+                Please enter a valid email address.
+            </p>
+
+            <div class="input-box">
+                <i class="fas fa-unlock-alt"></i>
+                <input type="password" name="password" [(ngModel)]="password" placeholder="Enter your Password"
+                    required>
+            </div>
+            <p class="validation-error" *ngIf="loginForm.controls['password'].invalid && loginForm.controls['password'].dirty">
+                Password is required.
+            </p>
+
+            <div class="btn-primary">
+                <!-- <button type="submit" [disabled]="loginForm.invalid">Login</button> -->
+            </div>
+            <div class="btn-primary">
+                <a [routerLink]="['/login/dashboard']">Login</a>
+            </div>
+            <div class="sign-up">
+                <h3>If not a user, <a [routerLink]="['signup']" routerLinkActive="active">Sign up first</a>.</h3>
+            </div>
+        </form>
+    </div>
+</div>
+<app-footer></app-footer>

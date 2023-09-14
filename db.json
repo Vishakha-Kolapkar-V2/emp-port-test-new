@@ -1,0 +1,166 @@
+{
+  "employee": [
+    {
+      "firstname": "Neehaa",
+      "lastname": "Patel",
+      "email": "neha@gmail.com",
+      "mobile": 9145501561,
+      "cname": "Big-D pvt Ltd",
+      "dname": "HR",
+      "gender": "Female",
+      "city": {
+        "mumbai": false,
+        "pune": false,
+        "other": false
+      },
+      "description": "Neha-HR",
+      "selectedDesignation": "Associate Software Engineer",
+      "date": "",
+      "id": 7
+    },
+    {
+      "firstname": "Shree",
+      "lastname": "Bhumkar",
+      "email": "shree@gmail.com",
+      "mobile": 89898989898,
+      "cname": "Balag GIS Pvt Ltd",
+      "dname": "Land",
+      "gender": "Male",
+      "city": {
+        "mumbai": false,
+        "pune": false,
+        "other": false
+      },
+      "description": "Shree-GIS",
+      "selectedDesignation": "Lead Software Engineer",
+      "date": "",
+      "id": 8
+    },
+    {
+      "firstname": "Kirti",
+      "lastname": "Patel",
+      "email": "kirtip@gmail.com",
+      "mobile": 9149501561,
+      "cname": "Birla Soft Pvt Ltd",
+      "dname": "DX",
+      "gender": "Female",
+      "city": {
+        "mumbai": false,
+        "pune": false,
+        "other": false
+      },
+      "description": "Kirti-DX",
+      "selectedDesignation": "Associate Software Engineer",
+      "date": "",
+      "id": 9
+    },
+    {
+      "firstname": "Radha",
+      "lastname": "Kolapkar",
+      "email": "radha@gmail.com",
+      "mobile": 9145501561,
+      "cname": "Softech solution Pvt Ltd",
+      "dname": "Digital Platform",
+      "gender": "Female",
+      "city": {
+        "mumbai": false,
+        "pune": false,
+        "other": false
+      },
+      "description": "Radha-DP",
+      "selectedDesignation": "Senior Software Engineer",
+      "date": "",
+      "id": 11
+    },
+    {
+      "date": "",
+      "firstname": "Prasad",
+      "lastname": "Shahja",
+      "email": "prasad@gmail.com",
+      "mobile": 7788656565,
+      "dname": "HR",
+      "cname": "P. K. Pvt Ltd",
+      "gender": "Male",
+      "city": {
+        "mumbai": false,
+        "pune": false,
+        "other": false
+      },
+      "description": "prasad-DP",
+      "selectedDesignation": "Senior Software Engineer",
+      "id": 12
+    },
+    {
+      "date": "",
+      "firstname": "Vijay",
+      "lastname": "Patil",
+      "email": "vijayp@gmail.com",
+      "mobile": 9145501561,
+      "dname": "UX-DP",
+      "cname": "V2 Pvt Ltd",
+      "gender": "Male",
+      "city": {
+        "mumbai": false,
+        "pune": false,
+        "other": false
+      },
+      "description": "vijay-Uxdp",
+      "selectedDesignation": "Associate Software Engineer",
+      "id": 13
+    },
+    {
+      "firstname": "Prachi",
+      "lastname": "Patil",
+      "email": "prachip@gmail.com",
+      "mobile": "898877889",
+      "cname": "W. K. Pvt Ltd",
+      "dname": "Digital Workforce",
+      "gender": "Female",
+      "city": {
+        "mumbai": false,
+        "pune": false,
+        "other": false
+      },
+      "description": "Prachi-DW",
+      "selectedDesignation": "Associate Software Engineer",
+      "date": "",
+      "id": 14
+    },
+    {
+      "firstname": "Prakhil",
+      "lastname": "Kasar",
+      "email": "prakhil@gmail.com",
+      "mobile": "8877112233",
+      "cname": "BALAGIS Pvt. Ltd",
+      "dname": "Land dept",
+      "gender": "Male",
+      "city": {
+        "mumbai": false,
+        "pune": false,
+        "other": false
+      },
+      "description": "Prakhil-land dept",
+      "selectedDesignation": "Senior Software Engineer",
+      "date": "",
+      "id": 15
+    },
+    {
+      "firstname": "Vishakha",
+      "lastname": "Kolapkar",
+      "email": "vishakhakolapkar07@gmail.com",
+      "mobile": "09145501561",
+      "cname": "V2SOLUTIONS PVT LTD",
+      "dname": "RMG",
+      "gender": "Female",
+      "city": {
+        "mumbai": false,
+        "pune": false,
+        "other": false
+      },
+      "description": "Vishakha-rmg",
+      "selectedDesignation": "Associate Software Engineer",
+      "date": "",
+      "id": 16
+    }
+  ]
+}
